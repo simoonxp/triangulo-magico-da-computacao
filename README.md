@@ -5,14 +5,16 @@
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
-  <img src="https://img.shields.io/badge/UFABC-Academic-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/🏆%20Vencedor-Ciências%20Exatas-gold?style=for-the-badge" />
 </p>
 
 ---
 
 ## 📌 Visão Geral
 
-Projeto acadêmico desenvolvido em parceria com a **UFABC (Universidade Federal do ABC)** e apresentado na **Escola Estadual Francisco Cristiano Lima de Freitas**, Unidade Regional de Ensino de São Bernardo do Campo.
+Projeto acadêmico apresentado em **06/10/2025 na UFABC**, como trabalho final do curso técnico integrado ao Ensino Médio na **Escola Estadual Francisco Cristiano Lima de Freitas**, Unidade Regional de Ensino de São Bernardo do Campo.
+
+> 🏆 **TCC reconhecido como vencedor na área de Ciências Exatas entre os trabalhos avaliados.**
 
 O projeto transforma o estudo do **Triângulo de Pascal** em uma experiência visual e interativa, conectando a matemática à ciência da computação através de algoritmos, Análise Combinatória e comparação de eficiência.
 
@@ -58,22 +60,20 @@ O projeto foi desenvolvido em três frentes:
 
 ### Algoritmos Implementados
 
-**Método 1 — Triângulo** `O(n²)`
+**Método 1 — Triângulo** `O(n²)` — Cálculo *a priori*
 ```python
-# Cálculo "a priori"
-def GerарTriângulo(numero_de_linhas):
-    triângulo = []
+def GerarTriangulo(numero_de_linhas):
+    triangulo = []
     for i in range(numero_de_linhas):
         linha_atual = [1] * (i + 1)
         for j in range(1, i):
-            linha_atual[j] = triângulo[i-1][j-1] + triângulo[i-1][j]
-        triângulo.append(linha_atual)
-    return triângulo
+            linha_atual[j] = triangulo[i-1][j-1] + triangulo[i-1][j]
+        triangulo.append(linha_atual)
+    return triangulo
 ```
 
-**Método 2 — Fatorial** `O(n² · k)`
+**Método 2 — Fatorial** `O(n² · k)` — Cálculo *sob demanda*
 ```python
-# Cálculo sob demanda
 def CalcularCombinacao(n, k):
     return fatorial(n) // (fatorial(k) * fatorial(n - k))
 ```
@@ -82,14 +82,10 @@ def CalcularCombinacao(n, k):
 
 ## 📈 Principais Resultados
 
-A ferramenta desenvolvida permite a geração interativa do Triângulo de Pascal e demonstra visualmente a diferença de eficiência entre os dois algoritmos:
-
 | Método | Complexidade | Desempenho |
 |---|---|---|
 | Triângulo (iterativo) | O(n²) | Mais rápido para grandes entradas |
 | Fatorial (combinatório) | O(n² · k) | Mais lento, porém mais didático |
-
-> O gráfico de comparação de performance evidencia a vantagem do método iterativo conforme o número de linhas aumenta.
 
 ---
 
@@ -103,10 +99,12 @@ A ferramenta desenvolvida permite a geração interativa do Triângulo de Pascal
 
 ## 📝 Conclusões
 
-- O **método iterativo** (Triângulo) é significativamente mais eficiente que o método fatorial para grandes entradas
+- O **método iterativo** é significativamente mais eficiente que o método fatorial para grandes entradas
 - A plataforma digital criada torna conceitos abstratos de Análise Combinatória acessíveis e visualmente compreensíveis
 - O projeto conectou com sucesso a matemática à ciência da computação no ambiente escolar
-- A equipe desenvolveu habilidades técnicas (hard skills) e socioeemocionais (soft skills) ao longo do processo
+- 🏆 **TCC vencedor na área de Ciências Exatas** — UFABC, outubro de 2025
+
+> *"Quando a matemática encontra aplicação por meio de soluções de sistemas, o resultado se aproxima do ideal, apresentando respostas não pela força bruta, mas por meio de métodos matemáticos."*
 
 ---
 
@@ -123,4 +121,5 @@ A ferramenta desenvolvida permite a geração interativa do Triângulo de Pascal
 <p align="left">
   <img src="https://img.shields.io/badge/UFABC-Projeto%20Acadêmico-006699?style=flat-square" />
   <img src="https://img.shields.io/badge/Ensino%20Médio%20Técnico-São%20Bernardo%20do%20Campo-orange?style=flat-square" />
+  <img src="https://img.shields.io/badge/outubro-2025-lightgrey?style=flat-square" />
 </p>
